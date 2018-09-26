@@ -8,7 +8,8 @@ To build:
 
 ```git clone https://github.com/plarios/android_test
 cd android_test/AroundSeattle
-./gradlew build```
+./gradlew build
+```
 
 (or open `android_test/AroundSeattle` in Android Studio)
 

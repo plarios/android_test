@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:startDestination="@id/searchFragment">
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.aroundseattle.ui.SearchFragment"
+        android:label="SearchFragment" >
+        <action
+            android:id="@+id/showMap"
+            destination="@+id/mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/showVenue"
+            destination="@+id/venueFragment"
+            app:destination="@id/venueFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.aroundseattle.ui.MapFragment"
+        android:label="MapFragment" >
+        <action
+            android:id="@+id/showVenue"
+            destination="@+id/venueFragment"
+            app:destination="@id/venueFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/venueFragment"
+        android:name="com.aroundseattle.ui.VenueFragment"
+        android:label="VenueFragment" >
+        <argument
+            android:name="venueId"
+            app:argType="string" />
+    </fragment>
+</navigation>

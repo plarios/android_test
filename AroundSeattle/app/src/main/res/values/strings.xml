@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AroundSeattle</string>
+    <string name="title_activity_main">Around Seattle</string>
+    <string name="search_hint">search for places in Seattle, Washington</string>
+</resources>
